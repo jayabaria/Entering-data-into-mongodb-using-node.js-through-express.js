@@ -1,0 +1,33 @@
+<h2>{{data}}</h2>
+
+<form action="/movie" method="post" autocomplete="off">
+<div class="input">
+<label for="Moviename">Movie name</label> 
+<input id="imoviename" name="Movie name" type="text" />
+<div class="text-danger">{{movie.Movienameerror}}</div>
+</div>
+ 
+<div class="input">
+<label for="Description">Description</label>
+<textarea rows="4" cols="50" id="udescription" name="Description"></textarea>
+<div class="text-danger">{{movie.moviedescriptionerror}}</div>
+</div>
+
+<div class="input">
+<label for="Url of image">Url of image</label>
+<input id="image" name="Image" type="text" /></div>
+<button type="submit">INSERT</button></form></section>
+<section class="update">
+
+<h3>Update Data</h3>
+<form action="/update" method="post">
+<div class="Movie name"><label for="title">Movie name</label> <input id="umoviename" name="Movie name" type="text" /></div>
+<div class="input"><label for="Description">Description</label> <textarea rows="4" cols="50" id="udescription" name="Description"></textarea></div>
+<div class="input"><label for="Url of image">Url of image</label> <input id="image" name="Image" type="text" /></div>
+<button type="submit">UPDATE</button></form></section>
+<section class="delete">
+<h3>Delete Data</h3>
+<form action="/delete" method="post">
+<div class="input"><label for="Movie name">Movie name</label> <input id="movie name" name="id" type="text" /></div>
+<button type="submit">DELETE</button></form></section>
+</form>
